@@ -15,8 +15,7 @@ header {
 }
 
 .container {
-    max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 165px;
 }
 
 .menu {
@@ -51,6 +50,10 @@ a {
     flex-direction: row;
 }
 
+.promo {
+    margin-bottom: 70px;
+}
+
 .promo__text {
     padding-top: 100px;
     padding-left: 30px;
@@ -66,6 +69,11 @@ a {
     font-size: 18px;
     color: #86928B;
     padding-bottom: 60px;
+}
+
+.img_bird {
+    width: 100%; 
+    height: auto;
 }
 
 .promo__btn {
@@ -91,7 +99,7 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 .btn__country {
@@ -173,7 +181,7 @@ span {
 }
 
 .block {
-    width: 539px;
+    width: 50%;
 }
 
 h2 {
@@ -239,6 +247,7 @@ footer {
 .collection__block {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .black {
@@ -257,24 +266,106 @@ footer {
     padding-bottom: 35px;
 }
 
-.first {
-    padding-right: 115px;
-}
-
-.second {
-    padding-right: 60px;
-    padding-bottom: 6px;
-}
-
-.third {
-    padding-right: 60px;
-}
-
-.fifth {
-    padding-left: 248px;
-}
-
 .icons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 10px;
+    }
+
+    .nav > ul > li > a {
+        font-size: 18px;
+    }
+
+    .promo__title {
+        font-size: 40px;
+    }
+
+    .promo__text {
+        padding-top: 35px;
+        padding-left: 30px;
+    }
+
+    .promo__sub {
+        padding-bottom: 40px;
+    }
+
+    .content__title {
+        font-size: 30px;
+    }
+
+    .h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .new {
+        padding: 70px 39px;
+    }
+
+    .gr {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .team_text {
+        margin: 40px 0 0 0;
+    }
+
+    .content__title {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .promo__title {
+        font-size: 36px;
+    }
+
+    .promo__text {
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+    .promo__sub {
+        font-size: 16px;
+    }
+    .menu {
+        flex-direction: column;
+    }
+
+    .promo__sub {
+        padding-bottom: 40px;
+    }
+
+    .logo {
+        padding-bottom: 16px;
+    }
+    .img_bird {
+        padding-top: 50px;
+    }
+
+    .choice {
+        flex-direction: column;
+    }
+
+    .btn__country {
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .promo__btn {
+        width: 178px;
+        height: 50px;
+    }
 }
